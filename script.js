@@ -40,18 +40,45 @@
 
 //Example 
 
-function one(){
-    return 1
-}
-function two(){
-    return one()+one()
-}
-function three()
-{
-    let sum=two()+one()
-    console.log(sum)
-}
-console.log('end')
-three()
+// function one(){
+//     return 1
+// }
+// function two(){
+//     return one()+one()
+// }
+// function three()
+// {
+//     let sum=two()+one()
+//     console.log(sum)
+// }
+// console.log('end')
+// three() 
+ setTimeout(function() 
+  {
+    console.log('hello')
+ }, 2000);
 
-console.log('dhruv')
+ console.log('hii how are you')
+  setTimeout(function() 
+  {
+    console.log('hello1')
+ }, 2000);
+
+
+let h1 = document.querySelector('h1');
+
+function changeColor(color, delay, callback) {
+setTimeout(() => {
+h1.style.color = color;
+if (callback) callback();
+}, delay);
+}
+
+changeColor('red', 2000, () => {
+changeColor('green', 2000, () => {
+changeColor('yellow', 2000, () => {
+changeColor('blue', 2000);
+})
+})
+})
+    
