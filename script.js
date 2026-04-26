@@ -53,31 +53,49 @@
 // }
 // console.log('end')
 // three() 
- setTimeout(function() 
-  {
-    console.log('hello')
- }, 2000);
+//  setTimeout(function() 
+//   {
+//     console.log('hello')
+//  }, 2000);
 
- console.log('hii how are you')
-  setTimeout(function() 
-  {
-    console.log('hello1')
- }, 2000);
+//  console.log('hii how are you')
+//   setTimeout(function() 
+//   {
+//     console.log('hello1')
+//  }, 2000);
 
+
+// let h1 = document.querySelector('h1');
+
+// function changeColor(color, delay, callback) {
+// setTimeout(() => {
+// h1.style.color = color;
+// if (callback) callback();
+// }, delay);
+// }
+
+// changeColor('red', 2000, () => {
+// changeColor('green', 2000, () => {
+// changeColor('yellow', 2000, () => {
+// changeColor('blue', 2000);
+// })
+// })
+// })
+    
 
 let h1 = document.querySelector('h1');
 
-function changeColor(color, delay, callback) {
+function changerang(color, delay, callback) {
 setTimeout(() => {
 h1.style.color = color;
 if (callback) callback();
 }, delay);
 }
 
-changeColor('red', 2000, () => {
-changeColor('green', 2000, () => {
-changeColor('yellow', 2000, () => {
-changeColor('blue', 2000);
+changerang('red', 2000, () => {
+changerang('green', 2000, () => {
+changerang('yellow', 2000, () => {
+changerang('blue', 2000);
 })
 })
 })
